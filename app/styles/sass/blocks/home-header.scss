@@ -1,0 +1,206 @@
+h2 {
+  font-family: "forum-mr", sans-serif;
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  @include media-breakpoint-down(md) {
+    font-size: 36px;
+  }
+}
+
+.header__container {
+  background-color: $main-color;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 70px 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media-breakpoint-down(xl) {
+    padding: 50px 100px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 40px 80px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 20px 20px;
+  }
+}
+
+.home-header__dark {
+  background-color: $dark;
+  width: 39%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  @include media-breakpoint-down(sm) {
+    width: 62%;
+  }
+}
+
+.top-line {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    justify-content: flex-end;
+  }
+}
+
+.logo {
+  flex: 1 0 0;
+  cursor: pointer;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.icons-nav {
+  z-index: 2;
+  padding-right: 100px;
+  a {
+    text-decoration: none;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-right: 65px;
+  }
+}
+
+.icon-nav {
+  height: 20px;
+  padding: 20px;
+  @include media-breakpoint-down(md) {
+    padding: 10px;
+  }
+}
+
+.midli-line__title {
+  display: flex;
+  h2 {
+    color: $dark;
+    padding-right: 136px;
+    @include media-breakpoint-down(xl) {
+      font-size: 48px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 36px;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
+    } 
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: 20px;
+  }
+}
+
+.titli-img__wraper {
+  z-index: 3;
+}
+
+.midle-line {
+  position: relative;
+}
+
+.midle-line__decoration {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  align-items: center;
+  padding-left: 10%;
+  &::before {
+    content: "";
+    height: 1px;
+    width: 130px;
+    background-color: $dark;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 0;
+  }
+}
+
+.midle-line__link {
+  color: $dark;
+  text-decoration: none;
+  font-family: "segoeUI-mr", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  cursor: pointer;
+  &:hover {
+    color: $dark;
+  }
+  padding-left: 38px;
+  @include media-breakpoint-down(xl) {
+    padding: 0;
+  }
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    bottom: -100px;
+  }
+}
+
+.bottom-line {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: flex-end;
+}
+
+.bottom-line__language {
+  flex: 1 0 0;
+}
+
+.link-language {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $dark;
+  font-family: "futura-mr", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  &:hover {
+    color: $dark;
+  }
+}
+
+.language-ru {
+cursor: pointer;
+}
+
+.language-en {
+  color: #c4c4c4;
+  cursor: pointer;
+}
+
+.bottom-line__description {
+  text-align: right;
+  z-index: 3;
+}
+
+.name-decoration {
+  font-family: "futura-mr", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.material {
+  font-family: "futura-mr", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #757575;
+}
+
+.price {
+  font-family: "segoeUI-mr", sans-serif;
+  font-size: 18px;
+  color: #e2b67a;
+  font-style: italic;
+  font-weight: 300;
+}
